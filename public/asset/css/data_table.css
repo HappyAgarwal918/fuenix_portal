@@ -1,0 +1,41 @@
+
+.restu_table{
+    border: 1px solid #2A276B;
+}
+.restu_table thead{
+    background-color: #86CFED;
+}
+table.dataTable thead th, table.dataTable tbody td {
+    padding: 15px 10px;
+    overflow: auto;
+}
+
+/*table.dataTable thead th.sorting{
+    color: white;
+}*/
+
+@media(max-width: 767px) {
+  
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, th, td, tr {
+    display: block;
+    overflow: auto;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr, tfoot tr {
+    display: none;
+  }
+  
+  .table td:nth-child(1) {
+      background: #ccc;
+  }
+
+  .nav-tabs{
+    flex-direction: column;
+    border: 0px;
+  }
+
+  ul.nav-tabs li{
+    border-bottom: 1px solid #2A276B;
+  }
+}
